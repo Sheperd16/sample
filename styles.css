@@ -1,0 +1,259 @@
+:root {
+  --brand-orange: #ff6a00;
+  --brand-blue: #003f8a;
+  --brand-yellow: #ffd84d;
+  --ink: #1a1f2e;
+  --muted: #5f6678;
+  --bg: #f7f9ff;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.wrap {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: var(--white);
+  border-bottom: 2px solid #e9edf8;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-mark {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-orange), #ff8d34);
+  color: var(--white);
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+}
+
+.logo-text {
+  line-height: 1;
+  display: inline-grid;
+}
+
+.logo-text strong {
+  color: var(--brand-blue);
+  font-size: 1.1rem;
+}
+
+.logo-text span {
+  color: var(--brand-orange);
+  font-weight: 800;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #23334e;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 4rem 0;
+  background: radial-gradient(circle at top right, #fff4d0, var(--bg) 50%);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+}
+
+.eyebrow {
+  font-weight: 700;
+  color: var(--brand-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 3.7vw, 3.4rem);
+  line-height: 1.08;
+  margin: 0.4rem 0;
+  color: var(--brand-blue);
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 56ch;
+}
+
+.actions {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: var(--brand-orange);
+  color: var(--white);
+}
+
+.btn.ghost {
+  border: 2px solid var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+.btn.light {
+  background: var(--brand-yellow);
+  color: var(--ink);
+}
+
+.promo-card {
+  background: var(--brand-blue);
+  color: var(--white);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(9, 28, 68, 0.2);
+}
+
+.price-tag {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--brand-yellow);
+  margin: 0.25rem 0;
+}
+
+.deals,
+.cta {
+  padding: 3rem 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cards article {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e9edf8;
+}
+
+.reasons {
+  padding: 2.5rem 0;
+  background: #edf3ff;
+}
+
+.reasons ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.reasons li {
+  margin-bottom: 0.5rem;
+}
+
+.store-search {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.store-search input {
+  flex: 1;
+  max-width: 340px;
+  border-radius: 8px;
+  border: 1px solid #ced5e7;
+  padding: 0.7rem;
+}
+
+.store-search button {
+  border: 0;
+  border-radius: 8px;
+  background: var(--brand-blue);
+  color: var(--white);
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+}
+
+.site-footer {
+  padding: 1rem 0;
+  border-top: 1px solid #e4eaf7;
+  background: var(--white);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #53607a;
+  font-size: 0.9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@media (max-width: 860px) {
+  nav {
+    display: none;
+  }
+
+  .hero-grid,
+  .cards,
+  .footer-row {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .store-search {
+    flex-direction: column;
+  }
+
+  .store-search input {
+    max-width: none;
+  }
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduced to Clear | Big Savings Every Day</title>
+    <meta
+      name="description"
+      content="Reduced to Clear brings top brands at heavily discounted prices. Discover weekly deals on groceries, snacks, drinks, and household essentials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#">
+          <span class="logo-mark" aria-hidden="true">$</span>
+          <span class="logo-text">
+            <strong>Reduced</strong>
+            <span>to Clear</span>
+          </span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#deals">Deals</a>
+          <a href="#why">Why Shop Here</a>
+          <a href="#stores">Find a Store</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">Trusted discount grocery destination</p>
+            <h1>Big brands, tiny prices.</h1>
+            <p class="lede">
+              Save up to 70% on everyday favourites with a constantly changing range of
+              groceries, snacks, drinks, and household essentials.
+            </p>
+            <div class="actions">
+              <a href="#deals" class="btn primary">Shop Weekly Deals</a>
+              <a href="#stores" class="btn ghost">Find Your Store</a>
+            </div>
+          </div>
+          <aside class="promo-card" aria-label="Featured offer">
+            <h2>This Week's Highlight</h2>
+            <p class="price-tag">Up to 70% OFF</p>
+            <p>Premium pantry staples, confectionery, and drinks while stocks last.</p>
+            <a href="#deals" class="btn light">See All Offers</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="deals" class="deals wrap">
+        <h2>Popular Deal Categories</h2>
+        <div class="cards">
+          <article>
+            <h3>Snacks & Treats</h3>
+            <p>Sweet and savoury favourites at clearance prices.</p>
+          </article>
+          <article>
+            <h3>Drinks</h3>
+            <p>Soft drinks, juices, and specialty beverages for less.</p>
+          </article>
+          <article>
+            <h3>Pantry Essentials</h3>
+            <p>Everyday cupboard basics from trusted brands.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="why" class="reasons">
+        <div class="wrap">
+          <h2>Why customers love Reduced to Clear</h2>
+          <ul>
+            <li><strong>Deep Discounts:</strong> Clearance and short-dated products at unbeatable prices.</li>
+            <li><strong>New Finds Weekly:</strong> Fresh stock and surprise deals every visit.</li>
+            <li><strong>Top Brands:</strong> Well-known products without the premium cost.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="stores" class="cta wrap">
+        <h2>Find your nearest store</h2>
+        <p>Visit one of our locations and discover what’s new in-store this week.</p>
+        <form class="store-search" action="#" method="get">
+          <label for="city" class="sr-only">Enter city or suburb</label>
+          <input id="city" name="city" placeholder="Enter city or suburb" />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>© <span id="year"></span> Reduced to Clear. All rights reserved.</p>
+        <p>Follow us for weekly specials.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
